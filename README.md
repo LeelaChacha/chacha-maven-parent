@@ -44,6 +44,9 @@ To declare jitpack as a repository, you must add it to the settings.xml file in 
 ## What's Included
 The following dependencies and plugins are included in release v1.1:
 ### Dependencies
+#### General-Purpose
+- lombok 1.18.20
+
 #### Logging:
 - slf4j 1.7.32
 
