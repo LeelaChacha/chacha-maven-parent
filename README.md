@@ -5,34 +5,18 @@ This repository contains a Parent POM for my Maven projects.
 If you want to use this POM or your own POM hosted on Github, you have to use [jitpack](https://jitpack.io/).
 
 Jitpack acts like a Maven Repository that clones a Github Repo and buildes it and provides the result an artifact.
-To declare jitpack as a repository, you must add it to the settings.xml file in your maven configuration.
+To declare jitpack as a repository, you can add it to your POM file.
 
-**Settings.xml**
+**pom.xml**
 ```
-<settings ...>
-  ...
-
-  <profiles>
-    ...
-    <profile>
-      <id>github-repo</id>
-      <repositories>
-        <repository>
-          <id>jitpack.io</id>
-          <url>https://jitpack.io</url>
-        </repository>
-      </repositories>
-    </profile>
-    ...
-  </profiles>
-
-  ...
-  <activeProfiles>
-    <activeProfile>github-repo</activeProfile>
-  </activeProfiles>
-</settings>
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 ```
-**In the Child POM**
+**then add the parent to the pom.xml**
 ```
 <parent>
     <groupId>com.github.__User__</groupId>
@@ -42,7 +26,7 @@ To declare jitpack as a repository, you must add it to the settings.xml file in 
 ```
 
 ## What's Included
-The following dependencies and plugins are included in release v1.1:
+The following dependencies and plugins are included in release v1.2:
 ### Dependencies
 #### General-Purpose
 - lombok 1.18.20
