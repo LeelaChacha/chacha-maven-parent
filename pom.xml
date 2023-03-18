@@ -21,7 +21,7 @@
     <!-- General-Purpose -->
     <lombok.version>1.18.20</lombok.version>
     <!-- Logging -->
-    <slf4j-api.version>1.7.32</slf4j-api.version>
+    <slf4j-api.version>2.0.7</slf4j-api.version>
     <!-- Testing -->
     <junit-jupiter-engine.version>5.7.2</junit-jupiter-engine.version>
     <mockito-core.version>3.12.1</mockito-core.version>
